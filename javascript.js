@@ -38,7 +38,7 @@ function nationalize(name) {
 
         country_id.textContent = getCountryName(item.country_id) + ":";
         const probability = document.createElement("p");
-        probability.textContent = (item.probability * 100).toFixed(0) + "%";
+        probability.textContent = (item.probability * 100).toFixed(1) + "%";
 
         if (country_id.textContent != "Country not found") {
           result.appendChild(img);
